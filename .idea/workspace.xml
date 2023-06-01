@@ -4,23 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="29be0fa0-72a5-45a5-bbd1-962add882c44" name="Changes" comment="it automatically opens chrome when first start the server">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/W3.CSS Template_files/avatar_hat.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/W3.CSS Template_files/css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/W3.CSS Template_files/font-awesome.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/W3.CSS Template_files/map.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/W3.CSS Template_files/p1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/W3.CSS Template_files/p2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/W3.CSS Template_files/p3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/W3.CSS Template_files/p4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/W3.CSS Template_files/p5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/W3.CSS Template_files/p6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/W3.CSS Template_files/p7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/W3.CSS Template_files/p8.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/W3.CSS Template_files/w3.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/index.html" afterDir="false" />
+    <list default="true" id="29be0fa0-72a5-45a5-bbd1-962add882c44" name="Changes" comment="Added generate testRequest to validate HTTP protocol">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/gui/httpserver/http/HttpMessage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/gui/httpserver/http/HttpMethod.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/gui/httpserver/http/HttpParsingException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/gui/httpserver/http/HttpRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/gui/httpserver/http/HttpStatusCode.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gui/httpserver/core/HttpConnectionWorkerThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gui/httpserver/core/HttpConnectionWorkerThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gui/httpserver/http/HttpParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gui/httpserver/http/HttpParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/com/gui/httpserver/http/HttpParserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/com/gui/httpserver/http/HttpParserTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,7 +24,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -66,15 +62,25 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;last_opened_file_path&quot;: &quot;D:/Projects/Java_Server&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Problems&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;copyright&quot;
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode.Java&quot;
   }
 }</component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.gui.httpserver.http" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.HttpServer">
     <configuration name="HttpServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="20" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -86,6 +92,21 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HttpParserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="simplehttpserver" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.gui.httpserver.http.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.gui.httpserver.http" />
+      <option name="MAIN_CLASS_NAME" value="com.gui.httpserver.http.HttpParserTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -138,6 +159,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.HttpServer" />
+        <item itemvalue="JUnit.HttpParserTest" />
       </list>
     </recent_temporary>
   </component>
@@ -199,7 +221,28 @@
       <option name="project" value="LOCAL" />
       <updated>1685598690053</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Added new feature tu upload a webpage from a file.">
+      <created>1685601200105</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1685601200105</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Added new feature tu upload a webpage from a file.">
+      <created>1685601229604</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1685601229604</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Added generate testRequest to validate HTTP protocol">
+      <created>1685642025130</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1685642025130</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -222,6 +265,32 @@
     <MESSAGE value="MultiThread handling" />
     <MESSAGE value="removed unused dependencies and variables" />
     <MESSAGE value="it automatically opens chrome when first start the server" />
-    <option name="LAST_COMMIT_MESSAGE" value="it automatically opens chrome when first start the server" />
+    <MESSAGE value="Added new feature tu upload a webpage from a file." />
+    <MESSAGE value="Added generate testRequest to validate HTTP protocol" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added generate testRequest to validate HTTP protocol" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/gui/httpserver/http/HttpParser.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="com.gui.httpserver.http.HttpParsingException" package="com.gui.httpserver.http" />
+          <option name="timeStamp" value="4" />
+        </breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/test/com/gui/httpserver/http/HttpParserTest.java</url>
+          <line>25</line>
+          <properties class="com.gui.httpserver.http.HttpParserTest" method="beforeCass">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

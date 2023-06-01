@@ -27,7 +27,9 @@ public class HttpConnectionWorkerThread extends Thread {
     public void run() {
         try (InputStream inputStream = socket.getInputStream(); OutputStream outputStream = socket.getOutputStream()) {
 
+
             StringBuilder contentBuilder = new StringBuilder();
+
            /* try {
                 BufferedReader in = new BufferedReader(new FileReader("src/main/resources/index.html"));
                 String str;
