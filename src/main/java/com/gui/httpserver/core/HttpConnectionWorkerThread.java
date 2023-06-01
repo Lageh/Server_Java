@@ -12,9 +12,7 @@ import com.gui.httpserver.HttpServer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.OutputStream;
+import java.io.*;
 import java.net.Socket;
 
 public class HttpConnectionWorkerThread extends Thread {
@@ -24,23 +22,24 @@ public class HttpConnectionWorkerThread extends Thread {
     public HttpConnectionWorkerThread(Socket socket){
         this.socket = socket;
     }
-    /**
-     * If this thread was constructed using a separate
-     * <code>Runnable</code> run object, then that
-     * <code>Runnable</code> object's <code>run</code> method is called;
-     * otherwise, this method does nothing and returns.
-     * <p>
-     * Subclasses of <code>Thread</code> should override this method.
-     *
-     * @see #start()
-     * @see #stop()
-     * @see #Thread(ThreadGroup, Runnable, String)
-     */
+
     @Override
     public void run() {
         try (InputStream inputStream = socket.getInputStream(); OutputStream outputStream = socket.getOutputStream()) {
 
-            String html = "<html><head>Java Server</head><body><h1>This was created inside the server</h1></body></html>";
+            StringBuilder contentBuilder = new StringBuilder();
+           /* try {
+                BufferedReader in = new BufferedReader(new FileReader("src/main/resources/index.html"));
+                String str;
+                while ((str = in.readLine()) != null) {
+                    contentBuilder.append(str);
+                }
+                in.close();
+            } catch (IOException e) {
+            }
+            String html = contentBuilder.toString();
+            */
+            String html = "<html><head><title>Java Server is running ...</title></head><body><h1>This was created inside the server</h1></body></html>";
             final String CRLF = "\n\r";
 
             String response =
