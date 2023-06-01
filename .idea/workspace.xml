@@ -4,9 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="29be0fa0-72a5-45a5-bbd1-962add882c44" name="Changes" comment="removed unused dependencies and variables">
+    <list default="true" id="29be0fa0-72a5-45a5-bbd1-962add882c44" name="Changes" comment="it automatically opens chrome when first start the server">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/W3.CSS Template_files/avatar_hat.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/W3.CSS Template_files/css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/W3.CSS Template_files/font-awesome.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/W3.CSS Template_files/map.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/W3.CSS Template_files/p1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/W3.CSS Template_files/p2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/W3.CSS Template_files/p3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/W3.CSS Template_files/p4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/W3.CSS Template_files/p5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/W3.CSS Template_files/p6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/W3.CSS Template_files/p7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/W3.CSS Template_files/p8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/W3.CSS Template_files/w3.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gui/httpserver/HttpServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gui/httpserver/HttpServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gui/httpserver/core/HttpConnectionWorkerThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gui/httpserver/core/HttpConnectionWorkerThread.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,20 +60,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "D:/Projects/Java_Server",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "copyright"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Projects/Java_Server&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;copyright&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="HttpServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="20" />
@@ -178,7 +192,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685598053679</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="it automatically opens chrome when first start the server">
+      <created>1685598690053</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1685598690053</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -200,6 +221,7 @@
     <MESSAGE value="configuration package" />
     <MESSAGE value="MultiThread handling" />
     <MESSAGE value="removed unused dependencies and variables" />
-    <option name="LAST_COMMIT_MESSAGE" value="removed unused dependencies and variables" />
+    <MESSAGE value="it automatically opens chrome when first start the server" />
+    <option name="LAST_COMMIT_MESSAGE" value="it automatically opens chrome when first start the server" />
   </component>
 </project>
