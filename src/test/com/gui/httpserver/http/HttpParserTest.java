@@ -24,17 +24,43 @@ class HttpParserTest {
     private HttpParser httpParser;
     @BeforeAll
     public void beforeCass() {
-        httpParser = new HttpParser();
+       httpParser = new HttpParser();
     }
 
     @Test
     void parseHttpRequest () {
-        httpParser.parseHttpRequest(
-                generateValidTestCase()
-        );
+
+        HttpRequest request = null;
+        try {
+            request = httpParser.parseHttpRequest(
+                    generateValidGETTestCase()
+            );
+        } catch (HttpParsingException e) {
+            fail(e);
+        }
+
+        assertEquals(request.getMethod(),HttpMethod.GET);
+    }
+    @Test
+    void parseHttpRequestBadMethod1 () {
+        try {
+            HttpRequest request = httpParser.parseHttpRequest(generateBadTestCaseMethodName());
+            fail();
+        } catch  (HttpParsingException e) {
+            assertEquals(e.getErrorCode(), HttpStatusCode.SERVER_ERROR_501_NOT_IMPLEMENTED);
+        }
+    }
+    @Test
+    void parseHttpRequestBadMethod2 () {
+        try {
+            HttpRequest request = httpParser.parseHttpRequest(generateBadTestCaseMethodName2());
+            fail();
+        } catch  (HttpParsingException e) {
+            assertEquals(e.getErrorCode(), HttpStatusCode.SERVER_ERROR_501_NOT_IMPLEMENTED);
+        }
     }
 
-    private InputStream generateValidTestCase(){
+    private InputStream generateValidGETTestCase(){
         String rawData = "GET / HTTP/1.1\r\n" +
                 "Host: localhost:6060\r\n" +
                 "Connection: keep-alive\r\n" +
@@ -57,4 +83,27 @@ class HttpParserTest {
                 rawData.getBytes(
                         StandardCharsets.US_ASCII));
     }
+    private InputStream generateBadTestCaseMethodName(){
+        String rawData = "GeT / HTTP/1.1\r\n" +
+                "Accept-Encoding: gzip, deflate, br\r\n" +
+                "Accept-Language: en-US,en;q=0.9,pt-BR;q=0.8,pt;q=0.7,es-419;q=0.6,es;q=0.5" +
+                "\r\n";
+
+
+        return new ByteArrayInputStream(
+                rawData.getBytes(
+                        StandardCharsets.US_ASCII));
+    }
+    private InputStream generateBadTestCaseMethodName2(){
+        String rawData = "GETTTTTTTTTTTTTTTTTTTTTTT / HTTP/1.1\r\n" +
+                "Accept-Encoding: gzip, deflate, br\r\n" +
+                "Accept-Language: en-US,en;q=0.9,pt-BR;q=0.8,pt;q=0.7,es-419;q=0.6,es;q=0.5" +
+                "\r\n";
+
+
+        return new ByteArrayInputStream(
+                rawData.getBytes(
+                        StandardCharsets.US_ASCII));
+    }
+
 }
