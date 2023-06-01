@@ -4,22 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="29be0fa0-72a5-45a5-bbd1-962add882c44" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/copyright/Guilherme_Guerra.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/gui/httpserver/config/HttpConfigurationException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/gui/httpserver/core/HttpConnectionWorkerThread.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/gui/httpserver/core/ServerListenerThread.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/simplehttpserver.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="29be0fa0-72a5-45a5-bbd1-962add882c44" name="Changes" comment="removed unused dependencies and variables">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/gui/httpserver/HttpServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gui/httpserver/HttpServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gui/httpserver/config/Configuration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gui/httpserver/config/Configuration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gui/httpserver/config/ConfigurationManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gui/httpserver/config/ConfigurationManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gui/httpserver/util/Json.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gui/httpserver/util/Json.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/http.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/http.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,7 +54,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
     "last_opened_file_path": "D:/Projects/Java_Server",
-    "project.structure.last.edited": "Project",
+    "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "copyright"
@@ -177,7 +164,21 @@
       <option name="project" value="LOCAL" />
       <updated>1685591565937</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="MultiThread handling">
+      <created>1685597607411</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1685597607411</updated>
+    </task>
+    <task id="LOCAL-00006" summary="removed unused dependencies and variables">
+      <created>1685598053679</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1685598053679</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -197,6 +198,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="First Commit" />
     <MESSAGE value="configuration package" />
-    <option name="LAST_COMMIT_MESSAGE" value="configuration package" />
+    <MESSAGE value="MultiThread handling" />
+    <MESSAGE value="removed unused dependencies and variables" />
+    <option name="LAST_COMMIT_MESSAGE" value="removed unused dependencies and variables" />
   </component>
 </project>

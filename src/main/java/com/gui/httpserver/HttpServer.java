@@ -24,6 +24,7 @@ public class HttpServer {
         try {
             ServerListenerThread serverListenerThread = new ServerListenerThread(conf.getPort());
             serverListenerThread.start();
+            Runtime.getRuntime().exec(new String[]{"cmd", "/c","start chrome http://localhost:" + conf.getPort() + "/"});
         } catch (IOException e) {
             e.printStackTrace();
         }
