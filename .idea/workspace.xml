@@ -5,7 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="29be0fa0-72a5-45a5-bbd1-962add882c44" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/copyright/Guilherme_Guerra.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/gui/httpserver/config/HttpConfigurationException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/gui/httpserver/core/HttpConnectionWorkerThread.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/gui/httpserver/core/ServerListenerThread.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/simplehttpserver.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gui/httpserver/HttpServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gui/httpserver/HttpServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gui/httpserver/config/Configuration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gui/httpserver/config/Configuration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gui/httpserver/config/ConfigurationManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gui/httpserver/config/ConfigurationManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gui/httpserver/util/Json.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gui/httpserver/util/Json.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/http.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/http.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,16 +67,18 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
     "last_opened_file_path": "D:/Projects/Java_Server",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.importing"
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "copyright"
   }
 }]]></component>
   <component name="RunManager">
     <configuration name="HttpServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="20" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="com.gui.httpserver.HttpServer" />
-      <module name="Java_Server" />
+      <module name="simplehttpserver" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.gui.httpserver.*" />
@@ -154,7 +170,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685591151631</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="configuration package">
+      <created>1685591565937</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1685591565937</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
