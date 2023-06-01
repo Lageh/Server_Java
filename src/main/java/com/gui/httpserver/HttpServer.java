@@ -10,7 +10,7 @@ import java.io.IOException;
 
 public class HttpServer {
     private final static Logger LOGGER = LoggerFactory.getLogger(HttpServer.class);
-    public static void main(String[] args) throws InterruptedException {
+    public static void main(String[] args) {
         LOGGER.info("Server Starting...");
 
         ConfigurationManager.getInstance().loadConfigurationFile("src/main/resources/http.json");
@@ -22,7 +22,7 @@ public class HttpServer {
         LOGGER.info("Username: " + ConfigurationManager.getInstance().getCurrentConfiguration().getUsername());
 
         try {
-            ServerListenerThread serverListenerThread = new ServerListenerThread(conf.getPort(),conf.getWebroot());
+            ServerListenerThread serverListenerThread = new ServerListenerThread(conf.getPort());
             serverListenerThread.start();
         } catch (IOException e) {
             e.printStackTrace();
